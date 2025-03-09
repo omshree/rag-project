@@ -71,13 +71,18 @@ python src/run.py
 
 You can manually run the FastAPI app using **Uvicorn** and test the API using Swagger.
 
-### **1️ Start FastAPI with Uvicorn**
+### **1 Start FastAPI with Uvicorn for RAG application**
 
 ```bash
-uvicorn app:app --reload --loop asyncio --host 0.0.0.0 --port 8000
+uvicorn app:app --reload --loop asyncio
+```
+### **2 Start FastAPI with Uvicorn for E comm application**
+
+```bash
+uvicorn ecom_app:app --reload --loop asyncio
 ```
 
-### **2️ Access API Documentation**
+### **3 Access API Documentation**
 
 - **Swagger UI**: [http://localhost:8000/docs](http://localhost:8000/docs)
 - **Redoc UI**: [http://localhost:8000/redoc](http://localhost:8000/redoc)
