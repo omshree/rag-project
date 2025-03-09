@@ -28,7 +28,7 @@ if __name__=="__main__":
         response = query_rag_system(query)
         print(response['content'])
 
-        inp = input("do you want to continue or do you want to start?: ")
+        inp = input("do you want to continue or do you want to start over?: ")
         if inp =='start':
             messages = [{"role": "assistant", "content": "How can I help?"}]
         else:
